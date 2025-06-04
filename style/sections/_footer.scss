@@ -1,0 +1,35 @@
+.footer {
+  background-color: #333;
+  padding: 3rem 0;
+  text-align: center;
+  color: white;
+
+  &__title {
+    @include aleo(24px, 700);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    @include josefin(16px, 400, #ccc);
+    margin-bottom: 1.5rem;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    i {
+      font-size: 1rem;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: opacity 0.3s;
+
+      &:hover {
+        color: rgb(61, 61, 255);
+        opacity: 0.7;
+      }
+    }
+  }
+}

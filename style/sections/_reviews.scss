@@ -1,0 +1,58 @@
+.reviews {
+  background-image: url("../images/reviews_Bimg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem 10%;
+  text-align: center;
+  color: white;
+
+  &__title {
+    @include aleo(36px, 400);
+    margin-bottom: 3rem;
+  }
+}
+
+.review-card {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #333333;
+  text-align: left;
+
+  &__image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__content {
+    flex: 2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__name {
+    @include josefin(20px, 400);
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    color: #5474fd;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    @include josefin(16px, 300, #e8e8e8, italic);
+    line-height: 1.6;
+  }
+}

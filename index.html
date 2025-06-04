@@ -42,6 +42,11 @@
             <div class="hero__footer__logo">
               <h3>BHROMAON</h3>
             </div>
+
+            <div class="hero__footer__toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+
             <div class="hero__footer__nav">
               <a href="">WHO WE ARE</a>
               <a href="">WHAT WE DO</a>
@@ -74,7 +79,7 @@
           </div>
         </div>
       </section>
-      <!--------------- section about banner ------------->
+      <!---------------  about banner ------------->
       <div class="about__banner">
         <div class="about__steps">
           <div class="step">
@@ -91,6 +96,73 @@
           </div>
         </div>
       </div>
+      <!--------------- section destination ------------->
+      <!----------- Madrid ------------->
+      <section class="destination destination--madrid">
+        <div class="destination-card left">
+          <span class="destination-card__label">Spain</span>
+          <h3 class="destination-card__title">GRAND SPAIN MADRID</h3>
+          <p class="destination-card__text">
+            But I must explain to you how all this mistaken idea of account to
+            denouncing pleasure and praising pain was account born and I account
+            will give you a complete account of the system
+          </p>
+          <button class="destination-card__button">BOOK NOW</button>
+        </div>
+      </section>
+      <!----------- Spain ------------->
+      <section class="destination destination--spain">
+        <div class="destination-card right">
+          <span class="destination-card__label">Spain</span>
+          <h3 class="destination-card__title">GRAND SPAIN MADRID</h3>
+          <p class="destination-card__text">
+            But I must explain to you how all this mistaken idea of account to
+            denouncing pleasure and praising pain was account born and I account
+            will give you a complete account of the system
+          </p>
+          <button class="destination-card__button">BOOK NOW</button>
+        </div>
+      </section>
+      <!--------------- section reviews ------------->
+      <section class="reviews">
+        <h2 class="reviews__title">What Our Tourist Say</h2>
+
+        <div class="review-card">
+          <div class="review-card__image">
+            <img src="images/reviews_img1.png" alt="Reviewer photo hiking" />
+          </div>
+
+          <div class="review-card__content">
+            <h3 class="review-card__name">SAM SUMON</h3>
+            <i class="fa-solid fa-quote-left review-card__icon"></i>
+            <p class="review-card__text">
+              But I must explain to you how all this mistaken idea of account to
+              denouncing pleasure and praising pain. But I must explain to you
+              how all this mistaken idea of account was born and I will give you
+              a complete account of the system...
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer class="footer">
+      <h3 class="footer__title">BHROMAON</h3>
+      <p class="footer__subtitle">Safe Travel Anywhere</p>
+      <div class="footer__socials">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".hero__footer__toggle");
+      const nav = document.querySelector(".hero__footer__nav");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>

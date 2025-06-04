@@ -100,13 +100,13 @@
 .hero__footer {
   position: absolute;
   bottom: 0;
-  height: 100%;
-  max-height: 83px;
   width: 100%;
   background-color: #5373fd;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  max-height: 83px;
+  height: auto;
 
   &-inner {
     width: 100%;
@@ -114,12 +114,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
-  &__logo {
-    h3 {
-      @include josefin(24px, 700);
-    }
+  &__logo h3 {
+    @include josefin(24px, 700);
+  }
+
+  &__toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
   }
 
   &__nav {
