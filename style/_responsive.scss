@@ -82,15 +82,34 @@
     gap: 1rem;
 
     img {
-      // width: 100%;
+      width: 100%;
       max-width: 300px;
       transform: translateX(0);
     }
   }
 
   .about__text {
-    max-width: 100%;
+    max-width: 80%;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+      width: 80%;
+      transform: translateX(0);
+    }
+  }
+
+  .about__text {
+    font-size: 14px;
+    padding: 0 1rem;
   }
 }
 
@@ -111,6 +130,31 @@
   }
 }
 
+// <!------- Responsive about banner ------->
+@media (max-width: 480px) {
+  .about__banner {
+    padding: 1.5rem 1rem;
+  }
+
+  .about__steps {
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .about__steps .step {
+    max-width: 250px;
+    text-align: center;
+
+    i {
+      font-size: 1rem !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
 // <!------- Responsive destination section ------->
 
 @media (max-width: 768px) {
@@ -143,6 +187,55 @@
       margin: 2rem auto;
       max-width: 80%;
       padding: 2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .destination .destination-card {
+    padding: 1.5rem 1rem;
+    font-size: 14px;
+  }
+}
+// <!------- Responsive reviews section ------->
+@media (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    .review-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+
+      h4 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    padding: 1.5rem 1rem;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 13px;
     }
   }
 }
