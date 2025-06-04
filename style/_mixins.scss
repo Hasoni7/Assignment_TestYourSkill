@@ -1,0 +1,15 @@
+@mixin josefin($size, $weight: 400, $color: #fff, $style: normal) {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-style: $style;
+}
+
+@mixin aleo($size, $weight: 400, $color: #fff, $style: normal) {
+  font-family: "Aleo", serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-style: $style;
+}
