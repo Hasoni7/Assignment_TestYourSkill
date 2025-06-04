@@ -1,0 +1,109 @@
+.about {
+  background: url("../images/about_Bimg.png") no-repeat center center/cover;
+  color: white;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__top {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__text {
+    flex: 1;
+    max-width: 560px;
+    letter-spacing: 1.6px;
+
+    .about__title {
+      @include aleo(36px, 400);
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      @include josefin(16px, 400, #ccc);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .about__button {
+      @include aleo(16px, 400);
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      background-color: #5474fd;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #3a5df0;
+      }
+    }
+  }
+
+  &__images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+
+    .img1 {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .img2 {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 4px;
+      position: relative;
+      transform: translateX(40px);
+    }
+  }
+}
+
+// -----------Banner------------
+
+.about__banner {
+  width: 100%;
+  background-color: #333333;
+  padding: 3rem 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.about__steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    i {
+      font-size: 2rem;
+      color: #5474fd;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      @include aleo(36px, 400);
+      color: #ccc;
+    }
+  }
+}

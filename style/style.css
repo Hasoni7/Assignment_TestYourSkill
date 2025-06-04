@@ -76,6 +76,119 @@ h6 {
   isolation: isolate;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero__title {
+    font-size: 24px;
+  }
+  .hero__subtitle {
+    font-size: 14px;
+  }
+  .hero__footer {
+    padding: 1rem 0;
+    max-height: 300px;
+  }
+  .hero__footer .hero__footer-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  .hero__footer .hero__footer__logo h3 {
+    font-size: 18px;
+  }
+  .hero__footer .hero__footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.75rem;
+  }
+  .hero__footer .hero__footer__nav a {
+    font-size: 14px;
+    min-height: 42px;
+    padding: 0.25rem 1rem;
+  }
+  .searchbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 60%;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  .searchbar__input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .searchbar .searchbar__button {
+    width: 50%;
+    min-height: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .about__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+  .about__images img {
+    width: 100%;
+    max-width: 300px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .about__text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .about {
+    text-align: center;
+  }
+  .about__images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+  }
+  .about__images img {
+    max-width: 50%;
+    height: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 .hero {
   height: 100vh;
   background: url("../images/hero_Bimg.png") no-repeat center center/cover;
@@ -310,4 +423,156 @@ h6 {
 }
 .hero__footer__nav a:hover {
   opacity: 0.7;
+}
+
+.about {
+  background: url("../images/about_Bimg.png") no-repeat center center/cover;
+  color: white;
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.about__top {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+.about__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 560px;
+  letter-spacing: 1.6px;
+}
+.about__text .about__title {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+.about__text p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ccc;
+  font-style: normal;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.about__text .about__button {
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-style: normal;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #5474fd;
+  border: none;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.about__text .about__button:hover {
+  background-color: #3a5df0;
+}
+.about__images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  gap: 2rem;
+}
+.about__images .img1 {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 4px;
+  position: relative;
+}
+.about__images .img2 {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 4px;
+  position: relative;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.about__banner {
+  width: 100%;
+  background-color: #333333;
+  padding: 3rem 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.about__steps .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.about__steps .step i {
+  font-size: 2rem;
+  color: #5474fd;
+  margin-bottom: 0.5rem;
+}
+.about__steps .step p {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  font-style: normal;
+  color: #ccc;
 }
